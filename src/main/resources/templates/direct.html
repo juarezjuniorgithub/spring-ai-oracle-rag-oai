@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Databases - Q&A App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="font-family: Verdana; color: #333232;">
+	<div class="container">
+		<h2 style="text-align: center;">Direct Call - SpringAI + OpenAI (no RAG)</h2>
+		<h3 style="text-align: center;">Get answers about Databases!</h3>
+		<form action="/directopenaicall" method="post">
+			<div class="input_wrap">
+				<label for="database">Database:</label> <input type="text" name="database">
+			</div>
+			<div class="input_wrap">
+				<label for="question">Question:</label> <input type="text"
+					name="question">
+			</div>
+			<button type="submit" class="btn">Ask Now!</button>
+		</form>
+	</div>
+</body>
+</html>
